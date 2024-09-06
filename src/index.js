@@ -1,4 +1,4 @@
-const app = require('./wallet');
+const app = require('../wallet');
 
 const port = process.env.PORT || 3000;
 

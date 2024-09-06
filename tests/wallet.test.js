@@ -1,5 +1,5 @@
 const request = require('supertest');
-const app = require('../wallet'); 
+const app = require('../src/wallet');
 
 describe('Wallet API', () => {
   it('should return the current wallet balance', async () => {
