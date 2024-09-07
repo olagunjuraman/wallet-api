@@ -7,6 +7,10 @@ let wallet = {
 };
 
 
+app.get('/api/health', (req, res) => {
+  res.status(200).json({ status: 'OK', message: 'Wallet API is healthy' });
+});
+
 app.get('/wallet/balance', (req, res) => {
   res.json({ balance: wallet.balance });
 });
